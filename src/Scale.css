@@ -1,0 +1,19 @@
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* scaling both axis */
+    transform: scale(2, 2);
+    /* scaling both axis again */
+    transform: scale(2);
+    /* scaling in the x direction */
+    transform: scaleX(2);
+    /* scaling in the y direction */
+    transform: scaleY(2);
+}

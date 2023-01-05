@@ -1,0 +1,17 @@
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    /* skew along x axis */
+    transform: skewX(-10deg);
+    /* skew along y axis */
+    transform: skewY(-20deg);
+    /* skew along both axis */
+    transform: skew(10deg, 10deg);
+}

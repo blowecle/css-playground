@@ -1,0 +1,20 @@
+.wrapper {
+  height: 300px;
+  width: 300px;
+  border: 1px dashed red;
+  margin: 0 auto;
+}
+
+.inner {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  /* Translate 100px in the pos x direction */
+  transform: translate(100px);
+  /* Translate 100px in the pos y direction */
+  transform: translate(0,100px);
+  /* Translate 100px in both directions */
+  transform: translate(100px, 100px);
+  /* Translate 50% of it's width/length */
+  transform: translate(50%, 50%);
+}

@@ -1,13 +1,14 @@
-import './App.css';
+import Transforms from "./Transforms";
+import Scale from "./Scale";
+import Rotate from "./Rotate";
+import Skew from "./Skew";
 
 function App() {
   return (
-    <>
-    <h1>transforms sandbox</h1>
-      <div className="wrapper">
-        <div className="inner"></div>
-      </div>
-    </>
+    // <Transforms/>
+    // <Scale/>
+    // <Rotate/>
+    <Skew/>
   );
 }
 
