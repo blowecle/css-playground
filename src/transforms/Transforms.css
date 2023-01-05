@@ -1,0 +1,65 @@
+.wrapper {
+  height: 300px;
+  width: 300px;
+  border: 1px dashed red;
+  margin: 100px auto;
+}
+
+.inner {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+
+  /* Translate 100px in the pos x direction */
+  /* transform: translate(100px); */
+  /* Translate 100px in the pos y direction */
+  /* transform: translate(0,100px); */
+  /* Translate 100px in both directions */
+  /* transform: translate(100px, 100px); */
+  /* Translate 50% of it's width/length */
+  /* transform: translate(50%, 50%); */
+
+  /* degrees */
+  /* transform: rotate(5deg); */
+  /* gradians */
+  /* transform: rotate(5grad); */
+  /* radians */
+  /* transform: rotate(.5rad); */
+  /* turn */
+  /* transform: rotate(.37turn); */
+
+  /* scaling both axis */
+  /* transform: scale(2, 2); */
+  /* scaling both axis again */
+  /* transform: scale(2); */
+  /* scaling in the x direction */
+  /* transform: scaleX(2); */
+  /* scaling in the y direction */
+  /* transform: scaleY(2); */
+  
+  /* skew along x axis */
+  /* transform: skewX(-10deg); */
+  /* skew along y axis */
+  /* transform: skewY(-20deg); */
+  /* skew along both axis */
+  /* transform: skew(10deg, 10deg); */
+
+  /* change the origin of the transform */
+  /* top left corner */
+  /* transform-origin: 0% 0%;
+  transform-origin: top left; */
+  /* bottom left corner */
+  /* transform-origin: 0% 100%;
+  transform-origin: bottom left; */
+  /* bottom right corner */
+  /* transform-origin: 100% 100%;
+  transform-origin: bottom right; */
+  /* top right corner */
+  /* transform-origin: 100% 0%;
+  transform-origin: top right;
+  transform: rotate(20deg); */
+
+  /* MULTIPLE TRANSFORMS */
+  transform: rotate(20deg) translate(20px, 20px) scale(1.5);
+  /* applied from RIGHT to LEFT */
+}

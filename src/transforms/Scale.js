@@ -1,5 +1,5 @@
 import React from "react";
-import './Scale.css'
+import './Transforms.css'
 
 const Scale = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Transforms.css'
-const Transforms = () => {
+const Translate = () => {
 
   return (
     <>
@@ -12,4 +12,4 @@ const Transforms = () => {
   )
 }
 
-export default Transforms
+export default Translate;
