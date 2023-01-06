@@ -1,0 +1,65 @@
+.transition {
+    color: white;
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.step-start {
+    transition-timing-function: step-start;
+}
+
+.step-end {
+    transition-timing-function: step-end;
+}
+
+.container:hover .transition {
+    margin-left: 500px;
+}
+
+.gap {
+    height: 200px;
+    
+}
+
+/* 
+transition-timing-function: steps(n)
+transition-timing-function: steps(n,j)
+n -> number of steps
+j -> jump keyword => start || end
+*/
+
+.steps {
+    transition-timing-function: steps(10);
+}
+
+.steps-start {
+    transition-timing-function: steps(10,start);
+}
+
+.steps-end {
+    transition-timing-function: steps(10,end);
+}
