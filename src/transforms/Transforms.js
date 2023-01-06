@@ -1,16 +1,13 @@
-import Translate from "./Translate.js";
-import Scale from "./Scale";
-import Rotate from "./Rotate";
-import Skew from "./Skew";
-import Origin from "./Origin.js";
+import './Transforms.css'
 
 function App() {
   return (
-    // <Translate/>
-    // <Scale/>
-    // <Rotate/>
-    // <Skew/>
-    <Origin/>
+    <>
+      <h1>transforms sandbox</h1>
+      <div className="wrapper">
+        <div className="inner"></div>
+      </div>
+    </>
   );
 }
 
