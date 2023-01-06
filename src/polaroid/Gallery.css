@@ -1,8 +1,3 @@
-#root {
-    background: url('./bg.jpg') repeat;
-    min-height: 100vh;
-}
-
 .polaroid-gallery {
     text-align: center;
 }

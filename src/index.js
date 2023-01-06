@@ -7,10 +7,10 @@ import TimingFunction from './transitions/TimingFunction';
 import Cubic from './transitions/Cubic';
 import AllTransitions from './transitions/AllTransitions';
 import Rocket from './transitions/rocket/Rocket';
-
+import Corners from './buttons/Corners';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Rocket/>
+    <Corners/>
   </React.StrictMode>
 );
