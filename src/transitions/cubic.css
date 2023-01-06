@@ -1,4 +1,25 @@
 /* 
 transition-timing-function: cubic-bezier(x1,y1,x2,y2);
 timing function that describes a progression of movement as a cubic-bezier-curve.
+
+transition-delay: 2s || 1000ms;
 */
+
+.transition {
+    color: white;
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
+}
+
+.cubic {
+    transition-timing-function: cubic-bezier(1,.2,.3,.4);
+}
+
+.delay {
+    transition-delay: .5s;
+    transition-timing-function: cubic-bezier(1,.2,.3,.4);
+}

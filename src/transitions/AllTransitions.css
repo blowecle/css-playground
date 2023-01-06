@@ -1,0 +1,20 @@
+/* 
+transition-property: property name
+transition-duration: 1s || 1000ms 
+transition-timing-function: keyword steps-function or timing-function
+transition-delay: 1s || 1000ms
+*/
+
+.together {
+    width: 200px;
+    height: 35px;
+    background-color: red;
+    transition-property: transform;
+    transition-duration: 1.25s;
+    transition-timing-function: cubic-bezier(1, .34, 0, 1.4);
+}
+
+.together-container:hover .together{
+    background-color: green;
+    transform: translate(500px)
+}
