@@ -1,0 +1,20 @@
+.transition-div {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: red;
+    transition-property: display, align-items, justify-content, height, width, background-color, text-align;
+    /* match duration with property in the correct order, or use a single value */
+    transition-duration: 1s, 3s, 3s, 3s, 3s, 3s, 3s, 1s;
+    color: red;
+}
+
+.transition-div:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    text-align: center
+}
