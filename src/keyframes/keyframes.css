@@ -1,0 +1,47 @@
+body {
+    background-color: #eae067;
+    font-family: Raleway;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .page-title {
+    margin-top: 30px;
+  }
+  
+  .keyframes-box {
+    width: 300px;
+    height: 60px;
+    background-color: #2096c3;
+    margin-top: 30px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+    animation: move 1s infinite;
+  }
+
+  /* @keyframes name-of-animation {
+    0% {}
+    25% {}
+    50% {}
+    75% {}
+    100% {}
+    }
+    use steps to animate element, any % can be used and it can have unlimited steps
+    */
+  
+  @keyframes move{
+    0%  { margin-top: 30px;}
+    25% { margin-top: 100px;
+        margin-left: 100px;}
+    50% { margin-top: 30px;
+        margin-left: 100px;}
+    75% { margin-left: 200px;
+    margin-top: 100px;}
+    100%{ margin-top: 30px;}
+  }
+  
+  .keyframes-box:hover {
+    background-color: blue;
+  }
+  

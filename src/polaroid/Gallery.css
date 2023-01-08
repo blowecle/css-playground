@@ -19,18 +19,19 @@
 .polaroid-card:nth-of-type(even)::before {
     content: '';
     display: block;
-    background-color: red;
+    background-color: rgb(223, 221, 221);
     width: 100px;
     height: 25px;
-    transform: rotate(20deg) translate(30px, 5px);
+    transform: rotate(-30deg) translate(-30px, -25px);
 }
 
 .polaroid-card:nth-of-type(odd)::before {
     content: '';
     display: block;
-    background-color: red;
+    background-color: rgb(231, 230, 230);
     width: 100px;
     height: 25px;
+    transform: rotate(-30deg) translate(-30px, -25px);
 }
 
 .polaroid-card-caption {

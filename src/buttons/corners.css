@@ -17,7 +17,7 @@ h1 {
     margin-top: 30px;
 }
 
-.button {
+.corner-button {
     position: relative;
     border: 0;
     background-color: #e1e1e1;
@@ -29,7 +29,7 @@ h1 {
     overflow: hidden;
 }
 
-.button::before {
+.corner-button::before {
     content: '';
     height: 25px;
     width: 25px;
@@ -42,7 +42,7 @@ h1 {
     transition: width 0.6s ease, height 0.6s ease;
 }
 
-.button::after {
+.corner-button::after {
     content: '';
     position: absolute;
     width: 30px;
@@ -55,12 +55,12 @@ h1 {
     transition: width 0.6s ease, height 0.6s ease;
 }
 
-.button:hover::before {
+.corner-button:hover::before {
     width: 100%;
     height: 100%;
 }
 
-.button:hover::after {
+.corner-button:hover::after {
     width: 100%;
     height: 100%;
 }

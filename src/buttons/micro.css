@@ -1,0 +1,88 @@
+body {
+    background-color: #ecf0f1;
+    font-family: Raleway;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .page-title {
+    margin-top: 30px;
+  }
+  
+  .micro-button {
+    position: relative;
+    border: 0;
+    background-color: #e1e1e1;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+    width: 150px
+  }
+  
+  .micro-button.accept {
+    background-color: #28a745;
+    overflow: hidden;
+  }
+  
+  .micro-button.accept .action {
+    display: block;
+    transition: transform 0.4s, opacity 0.4s;
+  }
+  
+  .micro-button.accept:hover .action {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  
+  .micro-button.accept .fa.fa-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    transition: 0.4s bottom;
+  }
+  
+  .micro-button.accept:hover .fa.fa-check {
+    bottom: 0;
+  }
+  
+  .micro-button.delete {
+    background-color: #dc3545;
+    overflow: hidden;
+  }
+  
+  .micro-button.delete .action {
+    display: block;
+    transition: transform 0.4s, opacity 0.4s;
+  }
+  
+  .micro-button.delete:hover .action {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  
+  .micro-button.delete .fa.fa-remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -100%;
+    transition: 0.4s top;
+  }
+  
+  
+  .micro-button.delete:hover .fa.fa-remove {
+    top: 0;
+  }

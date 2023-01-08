@@ -1,0 +1,100 @@
+body {
+    background-color: #ecf0f1;
+    font-family: Raleway;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .page-title {
+    margin-top: 30px;
+  }
+  
+  .circle-button {
+    position: relative;
+    border: 0;
+    background-color: #e1e1e1;
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /** First Button **/
+  
+  .circle-button.circle-first {
+    overflow: hidden;
+  }
+  
+  .circle-button.circle-first .btn-txt {
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s;
+  }
+  
+  
+  .circle-button.circle-first:hover .btn-txt {
+    color: white;
+  }
+  
+  .circle-button.circle-first::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #1661d0;
+    border-radius: 50%;
+    transform: translate(calc(-50% - 20px), calc(-50% - 20px));
+    transition: width 0.4s, height 0.4s;
+    z-index: 1;
+  }
+  
+  .circle-button.circle-first:hover::before {
+    width: 500px;
+    height: 500px;
+  }
+  
+  /** Second Button **/
+  
+  .circle-button.circle-second {
+    overflow: hidden;
+  }
+  
+  .circle-button.circle-second .btn-txt {
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s;
+  }
+  
+  
+  .circle-button.circle-second:hover .btn-txt {
+    color: white;
+  }
+  
+  .circle-button.circle-second::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -230px;
+    right: -230px;
+    background-color: #1661d0;
+    border-radius: 50%;
+    transform: translate(calc(-50% - 20px), calc(-50% - 20px));
+    transition: width 0.4s, height 0.4s;
+    z-index: 1;
+  }
+  
+  .circle-button.circle-second:hover::before {
+    width: 330px;
+    height: 320px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
