@@ -1,9 +1,9 @@
 body {
-    background-color: #eae067;
     font-family: Raleway;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
   }
   
   .page-title {
@@ -17,7 +17,7 @@ body {
     margin-top: 30px;
     transition: 0.5s background-color;
     cursor: pointer;
-    animation: move 1s infinite;
+    animation: move 5s infinite;
   }
 
   /* @keyframes name-of-animation {
@@ -32,16 +32,116 @@ body {
   
   @keyframes move{
     0%  { margin-top: 30px;}
-    25% { margin-top: 100px;
+    10% { margin-top: 100px;
         margin-left: 100px;}
-    50% { margin-top: 30px;
+    20% { margin-top: 30px;
         margin-left: 100px;}
-    75% { margin-left: 200px;
+    30% { margin-left: 200px;
     margin-top: 100px;}
-    100%{ margin-top: 30px;}
+    40%{ margin-top: 30px;
+    margin-left: 200px}
+    50% { margin-top: 100px;
+    margin-left: 300px;}
+    60% { margin-top: 30px;
+    margin-left: 300px;}
+    70% { margin-top: 100px;
+    margin-left: 400px;}
+    80% { margin-top: 30px;
+    margin-left: 400px;}
+    90%{ margin-top: 100px;
+    margin-left: 500px;}
+    100% { margin-top: 30px;
+    margin-left: 500px;}
   }
   
   .keyframes-box:hover {
     background-color: blue;
   }
   
+.filler {
+    height: 400px;
+}
+
+.keyframes-box2 {
+    width: 300px;
+    height: 60px;
+    background-color: #2096c3;
+    margin-left: 500px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+    animation: second 3s infinite;
+  }
+
+  @keyframes second {
+    0% {margin-top: 0; margin-left: 500px;}
+    25% {margin-top: 100px; margin-left: 600px;}
+    50% {margin-top: 200px; margin-left: 500px;}
+    75% {margin-top: 100px; margin-left: 400px;}
+    100% {margin-top: 0; margin-left: 500px;}
+  }
+
+  .keyframes-box3 {
+    width: 90vw;
+    height: 100vh;
+    background-color: #007d23;
+    margin-left: 500px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+    position: absolute;
+    left: -300%;
+    animation: third 4s infinite;
+    z-index: 1;
+  }
+
+  @keyframes third {
+    0% {left: -300%;}
+    25% {left: -50%;}
+    25%,100% {left: -50%;}
+  }
+
+  .keyframes-box4 {
+    width: 80vw;
+    height: 100vh;
+    background-color: #ff4d00;
+    margin-left: 500px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+    position: absolute;
+    left: -300%;
+    z-index: 2;
+    animation: fourth 4s infinite;
+  }
+
+  @keyframes fourth {
+    0% {left: -300%;}
+    50% {left: -50%;}
+    50%,100% {left: -50%;}
+  }
+
+  .keyframes-box5 {
+    width: 70vw;
+    height: 100vh;
+    background-color: gold;
+    margin-left: 500px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+    position: absolute;
+    left: -300%;
+    animation: fifth 4s infinite;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  @keyframes fifth {
+    0% {left: -300%; opacity: 0;}
+    75% {left: -50%; opacity: 1;}
+    75%,100% {left: -50%;}
+  }
+
+  .keyframes-container {
+    position: relative;
+    height: 20vh;
+  }

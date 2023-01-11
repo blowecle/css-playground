@@ -13,6 +13,8 @@ import Swipe from './buttons/Swipe';
 import Circle from './buttons/Circle';
 import Captions from './buttons/Captions';
 import Keyframes from './keyframes/Keyframes';
+import Loaders from './loaders/Loaders';
+import Animations from './animations/Animations';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,5 +32,7 @@ root.render(
     <Circle/>
     <Captions/>
     <Keyframes/>
+    <Loaders/>
+    <Animations/>
   </React.StrictMode>
 );
